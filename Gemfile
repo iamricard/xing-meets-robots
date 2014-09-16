@@ -1,7 +1,6 @@
 source "http://rubygems.org"
 
 gem 'artoo'
-gem 'artoo-artduino'
+gem 'artoo-arduino'
 gem 'hybridgroup-serialport'
 gem 'firmata'
-gem 'gort'
