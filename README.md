@@ -38,14 +38,19 @@ ssh to the RPi and run:
 $ artoo arduino connect ADDRESS_OF_ARDUINO 8023 > artoo.log 2>&1 &
 $ ruby blink.rb > blink.log 2>&1 &
 $ ruby server.rb > server.log 2>&1 &
-# example address is cu.usbmodem1411, withouth /dev/
- ```
+```
 
 ## Setup jenkins
 
+Jenkins should call the sinatra endpoint after every build reporting the build outcome.
+
+Our simplistic approach so far is to add 2 `Post-build tasks` that find the status from the build log,
+one finds `FAILURE` in the log the other finds `SUCCESS`,
+then call `curl http://RASPBERRRY-IP:4567/builds/jobs?status=success` for the success case, and `curl http://RASPBERRRY-IP:4567/builds/jobs?status=failure` for the fail case.
+
 ## TODO
 
-- redirect outputs to logs in the commands below or foreman better
+- redirect outputs to logs in the commands above or better use foreman
 - fix the network flickering problem
 - add an index to sinatra to list the builds
 
