@@ -2,5 +2,8 @@ source "http://rubygems.org"
 
 gem 'artoo'
 gem 'artoo-arduino'
-gem 'hybridgroup-serialport'
 gem 'firmata'
+gem 'hybridgroup-serialport'
+gem 'rest_client'
+gem 'sinatra'
+
