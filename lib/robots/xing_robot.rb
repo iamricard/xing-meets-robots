@@ -12,7 +12,7 @@ class XINGRobot < Artoo::Robot
     puts "Firmware name: #{board.firmware_name}"
     puts "Firmata version: #{board.version}"
     jobs_ok.on
-    jobs_ko.off
+    jobs_ko.on
   end
 
   def jobs_broken
