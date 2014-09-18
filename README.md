@@ -13,6 +13,7 @@ ssh to the RPi and run:
 ```bash
 $ artoo arduino install
 $ artoo install socat
+# download and install gort from http://gort.io/
 ```
 
 Get the address of the arduino:
