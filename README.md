@@ -36,9 +36,10 @@ ssh to the RPi and run:
 
  ```bash
 $ artoo arduino connect ADDRESS_OF_ARDUINO 8023 > artoo.log 2>&1 &
-$ ruby blink.rb > blink.log 2>&1 &
-$ ruby server.rb > server.log 2>&1 &
-```
+$ ruby lib/robots.rb > robots.log 2>&1 &
+$ ruby lib/server.rb > server.log 2>&1 &
+# example address is `/dev/cu.usbmodem1411`, but you might need to drop `/dev/` part
+ ```
 
 ## Setup jenkins
 

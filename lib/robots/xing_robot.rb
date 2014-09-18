@@ -11,7 +11,7 @@ class XINGRobot < Artoo::Robot
   work do
     puts "Firmware name: #{board.firmware_name}"
     puts "Firmata version: #{board.version}"
-    jobs_ok.off
+    jobs_ok.on
     jobs_ko.on
   end
 
@@ -26,7 +26,3 @@ class XINGRobot < Artoo::Robot
   end
 
 end
-
-robots = []
-robots << XINGRobot.new(name: "arduino_bcn", commands: [:jobs_broken, :jobs_works])
-XINGRobot.work!(robots)
