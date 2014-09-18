@@ -2,7 +2,7 @@ require 'artoo'
 
 class XINGRobot < Artoo::Robot
 
-  connection :firmata, adaptor: :firmata, port: '/dev/cu.usbmodem1411'
+  connection :firmata, adaptor: :firmata, port: '/dev/ttyACM0'
   device :board, driver: :device_info
   api host: '127.0.0.1', port: '4321'
   device :jobs_ko, driver: :led, pin: 2
