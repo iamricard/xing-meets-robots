@@ -6,6 +6,8 @@ fire office alarms and play Star Trek epic sounds (well, not that all) when a bu
 
 This was our Innovation Week 09.2014 at XING's contest.
 
+http://slides.com/krzysztofherod/xing-meets-robots
+
 ## Installation
 
 ssh to the RPi and run:
